@@ -1,0 +1,86 @@
+.contact_wrapper .textarea .textarea_title {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.contact_wrapper .textarea textarea {
+  width: 100%;
+  outline: none;
+  background-color: #1e1a34;
+  border: 1px solid white;
+  opacity: 0.329;
+  height: 185px;
+  border-radius: 4px;
+  color: white;
+  padding: 30px 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: opacity 0.2 ease;
+  transition: opacity 0.2 ease;
+}
+
+.contact_wrapper .textarea textarea:hover {
+  opacity: 1;
+}
+
+.contact_wrapper .contact_about {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact_wrapper .contact_about .about_title {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.contact_wrapper .contact_about .about_block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(450px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-gap: 2vw;
+}
+
+@media screen and (max-width: 768px) {
+  .contact_wrapper .contact_about .about_block {
+    -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+.contact_wrapper .contact_about .about_block input {
+  background-color: #1e1a34;
+  border: 1px solid white;
+  opacity: 0.329;
+  border-radius: 4px;
+  color: white;
+  padding: 20px;
+  outline: none;
+  -webkit-transition: opacity 0.2 ease;
+  transition: opacity 0.2 ease;
+}
+
+.contact_wrapper .contact_about .about_block input:hover {
+  opacity: 1;
+}
+
+.contact_wrapper button {
+  background-color: #ff4ba8;
+  color: white;
+  cursor: pointer;
+  padding: 20px 50px;
+  font-size: 24px;
+  border: none;
+  outline: none;
+  margin-top: 40px;
+}
+/*# sourceMappingURL=contact.css.map */
