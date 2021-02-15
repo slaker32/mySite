@@ -74,6 +74,10 @@
   padding: 30px 16px;
 }
 
+.content .work_wrapper .work_item .work_item_bg .work_item_img {
+  height: 140px;
+}
+
 .content .work_wrapper .work_item .work_item_bg .work_item_img img {
   width: 100%;
   height: 100%;
