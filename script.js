@@ -51,6 +51,36 @@ document.addEventListener('DOMContentLoaded',()=> {
     search_init()
 
 
+    class SearchData {
+        constructor(input,dataArray) {
+            this.input = document.querySelector(input),
+            this.dataArray = document.querySelectorAll(dataArray)
+        }
+        state = {
+            inputData : ''
+        }
+        clickData() {
+            this.input.addEventListener('input',() => {
+                this.state.inputData = this.input.value
+                console.log(this.input.value)
+                this.showResult()
+            })
+        }
+        showResult() {
+            this.dataArray.forEach((item) => {
+                const title = item.querySelector('.work_item_title a').textContent
+                if (!title.toLowerCase().includes(this.state.inputData)) {
+                    item.style.display = 'none'
+                } else {
+                    item.style.display = 'grid'
+                }
+            })
+        }
+
+    }
 
 
+
+    const search = new SearchData('.search_input','.work_item')
+    search.clickData()
 })
