@@ -60,11 +60,13 @@ document.addEventListener('DOMContentLoaded',()=> {
             inputData : ''
         }
         clickData() {
-            this.input.addEventListener('input',() => {
-                this.state.inputData = this.input.value
-                console.log(this.input.value)
-                this.showResult()
-            })
+            if(this.input) {
+                this.input.addEventListener('input',() => {
+                    this.state.inputData = this.input.value
+                    console.log(this.input.value)
+                    this.showResult()
+                })
+            }
         }
         showResult() {
             this.dataArray.forEach((item) => {
